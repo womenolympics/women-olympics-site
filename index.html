@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Women Olympics — Par elles. Pour elles.">
+  <title>Women Olympics — Par elles. Pour elles.</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #f7f3ef;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .page {
+      position: relative;
+      width: 100%;
+      max-width: 1536px;
+      margin: 0 auto;
+      background: #f7f3ef;
+    }
+
+    .mockup {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .hotspot {
+      position: absolute;
+      display: block;
+      z-index: 10;
+      border-radius: 8px;
+      background: transparent;
+    }
+
+    .hotspot:focus-visible {
+      outline: 3px solid #ea6942;
+      outline-offset: 3px;
+    }
+
+    /* Navigation */
+    .nav-accueil       { left: 24.2%; top: 2.35%; width: 4.1%; height: 1.7%; }
+    .nav-evenement     { left: 29.7%; top: 2.35%; width: 6.3%; height: 1.7%; }
+    .nav-epreuves      { left: 37.0%; top: 2.35%; width: 4.8%; height: 1.7%; }
+    .nav-nations       { left: 42.7%; top: 2.35%; width: 4.6%; height: 1.7%; }
+    .nav-marraines     { left: 48.0%; top: 2.35%; width: 5.6%; height: 1.7%; }
+    .nav-partenaires   { left: 54.2%; top: 2.35%; width: 6.1%; height: 1.7%; }
+    .nav-infos         { left: 61.2%; top: 2.35%; width: 7.2%; height: 1.7%; }
+
+    /* Boutons du header */
+    .btn-live-top      { left: 72.9%; top: 1.65%; width: 10.1%; height: 2.7%; }
+    .btn-access-top    { left: 84.3%; top: 1.65%; width: 12.7%; height: 2.7%; }
+
+    /* Hero */
+    .btn-decouvrir     { left: 4.1%; top: 27.75%; width: 17.8%; height: 3.05%; }
+    .btn-plaquette-top { left: 24.2%; top: 27.75%; width: 20.0%; height: 3.05%; }
+
+    /* Live */
+    .btn-live-results  { left: 4.1%; top: 49.7%; width: 20.2%; height: 2.3%; }
+    .btn-plaquette     { left: 60.2%; top: 50.5%; width: 15.2%; height: 2.6%; }
+
+    /* Marraines */
+    .btn-marraines     { left: 4.1%; top: 78.2%; width: 16.5%; height: 2.2%; }
+    .btn-en-savoir     { left: 80.9%; top: 78.2%; width: 12.3%; height: 2.2%; }
+
+    /* Connexions */
+    .login-operateur   { left: 31.7%; top: 89.8%; width: 15.7%; height: 1.8%; }
+    .login-admin       { left: 53.1%; top: 89.8%; width: 15.7%; height: 1.8%; }
+
+    /* Footer */
+    .footer-accueil    { left: 23.4%; top: 96.6%; width: 4.5%; height: 1.2%; }
+    .footer-evenement  { left: 23.4%; top: 97.6%; width: 5.8%; height: 1.2%; }
+    .footer-epreuves   { left: 23.4%; top: 98.55%; width: 4.5%; height: 1.2%; }
+    .footer-nations    { left: 31.5%; top: 96.6%; width: 4.5%; height: 1.2%; }
+    .footer-marraines  { left: 31.5%; top: 97.6%; width: 5.3%; height: 1.2%; }
+    .footer-infos      { left: 31.5%; top: 98.55%; width: 6.4%; height: 1.2%; }
+
+    @media (max-width: 700px) {
+      .page {
+        width: 100%;
+      }
+
+      .hotspot {
+        border-radius: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <img
+      class="mockup"
+      src="assets/maquette-women-olympics.jpeg"
+      alt="Maquette officielle du site Women Olympics"
+    >
+
+    <a class="hotspot nav-accueil" href="#accueil" aria-label="Accueil"></a>
+    <a class="hotspot nav-evenement" href="#evenement" aria-label="L'événement"></a>
+    <a class="hotspot nav-epreuves" href="#epreuves" aria-label="Épreuves"></a>
+    <a class="hotspot nav-nations" href="#nations" aria-label="Nations"></a>
+    <a class="hotspot nav-marraines" href="#marraines" aria-label="Marraines"></a>
+    <a class="hotspot nav-partenaires" href="#partenaires" aria-label="Partenaires"></a>
+    <a class="hotspot nav-infos" href="#infos" aria-label="Informations pratiques"></a>
+
+    <a class="hotspot btn-live-top" href="live.html" aria-label="Voir le live"></a>
+    <a class="hotspot btn-access-top" href="connexion.html" aria-label="Accès organisation"></a>
+
+    <a class="hotspot btn-decouvrir" href="#evenement" aria-label="Découvrir l'événement"></a>
+    <a class="hotspot btn-plaquette-top" href="documents/plaquette-commerciale.pdf" aria-label="Télécharger la plaquette"></a>
+
+    <a class="hotspot btn-live-results" href="live.html" aria-label="Voir tous les résultats"></a>
+    <a class="hotspot btn-plaquette" href="documents/plaquette-commerciale.pdf" aria-label="Télécharger la plaquette commerciale"></a>
+
+    <a class="hotspot btn-marraines" href="#marraines" aria-label="Découvrir nos marraines"></a>
+    <a class="hotspot btn-en-savoir" href="#marraines" aria-label="En savoir plus sur les marraines"></a>
+
+    <a class="hotspot login-operateur" href="connexion.html?role=operateur" aria-label="Connexion opérateur sportif"></a>
+    <a class="hotspot login-admin" href="connexion.html?role=administrateur" aria-label="Connexion administrateur"></a>
+
+    <a class="hotspot footer-accueil" href="#accueil" aria-label="Accueil"></a>
+    <a class="hotspot footer-evenement" href="#evenement" aria-label="Événement"></a>
+    <a class="hotspot footer-epreuves" href="#epreuves" aria-label="Épreuves"></a>
+    <a class="hotspot footer-nations" href="#nations" aria-label="Nations"></a>
+    <a class="hotspot footer-marraines" href="#marraines" aria-label="Marraines"></a>
+    <a class="hotspot footer-infos" href="#infos" aria-label="Informations pratiques"></a>
+
+    <span id="accueil"></span>
+    <span id="evenement"></span>
+    <span id="epreuves"></span>
+    <span id="nations"></span>
+    <span id="marraines"></span>
+    <span id="partenaires"></span>
+    <span id="infos"></span>
+  </main>
+</body>
+</html>
